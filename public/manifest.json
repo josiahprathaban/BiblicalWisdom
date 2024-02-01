@@ -1,7 +1,7 @@
 {
-  "name": "vue-pwa",
-  "short_name": "vue-pwa",
-  "theme_color": "#4DBA87",
+  "name": "Biblical Wisdom",
+  "short_name": "Biblical Wisdom",
+  "theme_color": "#40c2fe",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

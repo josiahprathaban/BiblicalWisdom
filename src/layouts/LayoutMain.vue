@@ -1,8 +1,7 @@
 <template>
   <v-app>
     <div class="d-flex align-center px-5 py-3">
-      <v-img max-width="50" alt="OfficeNexus" src="/images/Icon.png" />
-      <div class="text-h5 font-weight-medium">OfficeNexus</div>
+      <v-img max-width="200" alt="OfficeNexus" src="/images/logo.svg" />
     </div>
 
     <v-main>

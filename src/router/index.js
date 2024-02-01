@@ -30,37 +30,37 @@ if (locale != "" && !(locale == "en" || locale == "zh" || locale == "ms")) {
 // all route logics
 const routes = [
   // Auth Pages
-  {
-    path: "/auth",
-    redirect: "/auth/organization-selection",
-    component: () =>
-      import(/* webpackChunkName: "layout-main" */ "@/layouts/LayoutMain.vue"),
-    // beforeEnter: multiguard([loggedInSuccess]),
-    children: [
-      {
-        path: "organization-selection",
-        name: "PageAuthOrganizationSelection",
-        component: () =>
-          import(
-            /* webpackChunkName: "auth-organization-selection" */ "@/views/auth/OrganizationSelection.vue"
-          ),
-        meta: {
-          title: "Org",
-        },
-      },
-      {
-        path: "signin",
-        name: "PageAuthSignin",
-        component: () =>
-          import(
-            /* webpackChunkName: "auth-signin" */ "@/views/auth/Signin.vue"
-          ),
-        meta: {
-          title: "Signin",
-        },
-      },
-    ],
-  },
+  // {
+  //   path: "/auth",
+  //   redirect: "/auth/organization-selection",
+  //   component: () =>
+  //     import(/* webpackChunkName: "layout-main" */ "@/layouts/LayoutMain.vue"),
+  //   // beforeEnter: multiguard([loggedInSuccess]),
+  //   children: [
+  //     {
+  //       path: "organization-selection",
+  //       name: "PageAuthOrganizationSelection",
+  //       component: () =>
+  //         import(
+  //           /* webpackChunkName: "auth-organization-selection" */ "@/views/auth/OrganizationSelection.vue"
+  //         ),
+  //       meta: {
+  //         title: "Org",
+  //       },
+  //     },
+  //     {
+  //       path: "signin",
+  //       name: "PageAuthSignin",
+  //       component: () =>
+  //         import(
+  //           /* webpackChunkName: "auth-signin" */ "@/views/auth/Signin.vue"
+  //         ),
+  //       meta: {
+  //         title: "Signin",
+  //       },
+  //     },
+  //   ],
+  // },
 
   // Error Pages
   {
@@ -98,8 +98,8 @@ const router = new VueRouter({
 router.afterEach((to) => {
   Vue.nextTick(() => {
     document.title = to.meta.title
-      ? to.meta.title + " | OfficeNexus"
-      : "OfficeNexus";
+      ? to.meta.title + " | Biblical Wisdom"
+      : "Biblical Wisdom";
   });
 });
 
