@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no height=" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <!--BOC:[splash]-->
+    <!-- <link rel="preload" href="/images/Splash.jpg" as="image"> -->
+    <script src="/scripts/jquery-3.6.0.min.js"></script>
+    <!--EOC-->
+    <!--BOC:[meta]-->
+    <title>OfficeNexus</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.png">
+    <meta property="og:url" content="<%= BASE_URL %>">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="OfficeNexus">
+    <meta property="og:image" content="<%= BASE_URL %>images/OGImage.png">
+    <meta property="og:description" content="Have fun with students together.">
+    <meta name="description" content="Have fun with students together.">
+    <!--EOC-->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','<%= process.env.VUE_APP_GOOGLE_TAG_MANAGER %>');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= process.env.VUE_APP_GOOGLE_TAG_MANAGER %>"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+      <strong>We're sorry but our website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!--BOC:[splash]-->
+    <!-- <div class="splash" style="position:fixed;z-index:9000;top:0;bottom:0;left:0;right:0;margin:auto;width:100vw;height:100vh;background-image:url('/images/Splash.jpg');background-repeat: no-repeat;background-size: cover;background-position:center;"></div>
+    <div class="splash" style="position:fixed;z-index:8000;top:0;bottom:0;left:0;right:0;margin:auto;width:100vw;height:100vh;background-image:url('/images/SplashLazy.jpg');background-repeat: no-repeat;background-size: cover;background-position:center;"></div> -->
+    <!--EOC-->
+    <!-- built files will be auto injected -->
+  </body>
+  <!-- <script>
+    //BOC:[splash]
+    if(document.referrer == window.location.origin || document.referrer == window.location.origin + '/') {
+      $('.splash').hide();
+    }
+    else {
+      $(document).ready(function() {
+        setTimeout(function(){
+          $('.splash').fadeOut();
+        },1200);
+      });
+    }
+    //EOC
+  </script> -->
+</html>
