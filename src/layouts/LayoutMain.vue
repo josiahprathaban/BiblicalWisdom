@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="black">
     <div class="d-flex align-center px-5 py-3">
       <v-img max-width="200" alt="OfficeNexus" src="/images/logo.svg" />
     </div>
@@ -8,7 +8,7 @@
       <router-view />
     </v-main>
     <div class="px-5 font-weight-light text-caption grey--text py-2">
-      © 2023, Keture (Pvt) Ltd. All rights reserved.
+      © 2024, BiblicalWisdom.co. All rights reserved.
     </div>
   </v-app>
 </template>
